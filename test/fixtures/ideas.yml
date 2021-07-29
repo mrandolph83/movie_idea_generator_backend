@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  character: MyString
+  setup: MyString
+  twist: MyString
+  genre_id: 1
+
+two:
+  character: MyString
+  setup: MyString
+  twist: MyString
+  genre_id: 1
