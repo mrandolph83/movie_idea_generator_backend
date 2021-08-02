@@ -11,7 +11,7 @@ def create
     if idea.save
         render json: idea, status: :accepted
     else
-        render joson: {errors: idea.errors.full_messages}, status: :unprocessible_entity
+        render json: {errors: idea.errors.full_messages}, status: :unprocessible_entity
     end
 end 
 

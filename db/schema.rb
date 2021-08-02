@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_29_041247) do
+ActiveRecord::Schema.define(version: 2021_08_02_174013) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,9 +25,11 @@ ActiveRecord::Schema.define(version: 2021_07_29_041247) do
     t.string "character"
     t.string "setup"
     t.string "twist"
-    t.integer "genre_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "genre_id", null: false
+    t.index ["genre_id"], name: "index_ideas_on_genre_id"
   end
 
+  add_foreign_key "ideas", "genres"
 end
