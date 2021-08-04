@@ -8,10 +8,10 @@ end
 
 def create
     idea = Idea.new(idea_params)
+  
+
     if idea.save
-        render json: idea, status: :accepted
-    else
-        render json: {errors: idea.errors.full_messages}, status: :unprocessible_entity
+        render json: IdeaSerializer.new(idea), status: :accepted
     end
 end 
 
