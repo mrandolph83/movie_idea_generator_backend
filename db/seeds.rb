@@ -16,7 +16,7 @@ sci = Genre.create(name: "Sci-Fi/Fantasy")
 
 
 
-a = Idea.create(character: 'A cop who doesn’t play by the rules', setup: 'fight/fights crime', twist: 'with a mischievious orangutan', generator_default: true, genre_id: 1)
+Idea.create(character: 'A cop who doesn’t play by the rules', setup: 'fight/fights crime', twist: 'with a mischievious orangutan', generator_default: true, genre_id: 1)
 Idea.create(character: 'From a land where honor and tradition reign, comes the legend of a Samurai who', setup: 'take(s) on an army of evil ninjas', twist: 'in an action-packed epic filled with elaborate, acrobatic kung-fu fight sequences', generator_default: true, genre_id: action.id)
 Idea.create(character: "A rising MMA star", setup: "must shoot, punch, and kick their way through an evil Dark Web organization", twist: "with a basement-dwelling slob of a hacker", generator_default: true, genre_id: action.id)
 Idea.create(character: 'A bullied young boy', setup: 'grow(s) 50 times in size and go(es) on a destructive rampage', twist: 'in the middle of downtown Tokyo (in Japanese with English subtitles)', generator_default: true, genre_id: action.id)

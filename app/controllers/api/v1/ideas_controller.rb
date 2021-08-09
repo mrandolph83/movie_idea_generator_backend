@@ -19,7 +19,7 @@ end
 
 private 
 def idea_params
-    params.require(:idea).permit(:character, :setup, :twist, :genre_id)
+    params.require(:idea).permit(:character, :setup, :twist, :genre_id, :generator_default)
 end 
 
 
