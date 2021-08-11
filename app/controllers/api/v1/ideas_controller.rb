@@ -17,6 +17,13 @@ def create
     end
 end 
 
+# def destroy
+   
+#     idea = Idea.find_by_id(idea_params)
+#     idea.destroy
+#     render json: idea
+# end
+
 private 
 def idea_params
     params.require(:idea).permit(:character, :setup, :twist, :genre_id, :generator_default)
