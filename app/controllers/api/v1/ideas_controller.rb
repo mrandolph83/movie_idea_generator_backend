@@ -17,12 +17,13 @@ def create
     end
 end 
 
-# def destroy
+def update
    
-#     idea = Idea.find_by_id(idea_params)
-#     idea.destroy
-#     render json: idea
-# end
+    idea = Idea.find_by_id(idea_params)
+    
+    idea.save
+    render json: IdeaSerializer.new(idea), status: :accepted
+end
 
 private 
 def idea_params
